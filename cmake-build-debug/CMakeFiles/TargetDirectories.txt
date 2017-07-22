@@ -1,0 +1,3 @@
+/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/Neural_net_attempt_two_.dir

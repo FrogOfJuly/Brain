@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Neural_net_attempt_two_"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\usr\local\share\eigen3\;CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Neural_net_attempt_two_">
+				<Option output="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/Neural_net_attempt_two_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 Neural_net_attempt_two_"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Neural_net_attempt_two_/fast">
+				<Option output="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/Neural_net_attempt_two_" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.1.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 Neural_net_attempt_two_/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/Kirill/ClionProjects/Neural_net_attempt_two\ /cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.h">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.h">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.h">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /../../../../usr/local/share/eigen3/cmake/Eigen3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /../../../../usr/local/share/eigen3/cmake/Eigen3Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /../../../../usr/local/share/eigen3/cmake/Eigen3Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\share\eigen3\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
