@@ -2,6 +2,7 @@
 #include "./Layer/Layer.h"
 #include "./Input_Layer/Input_layer.h"
 #include "./Dense_Layer/Dense_Layer.h"
+#include "./Tests/tests.h"
 
 int main() {
     /*Eigen::MatrixXd Test_Matrix(5, 3);
@@ -17,5 +18,6 @@ int main() {
     Brain::passing_test();
     Brain::test_Input_layer();
     Brain::test_Dense_layer();
+    Brain::gsl_test();
     return 0;
 }

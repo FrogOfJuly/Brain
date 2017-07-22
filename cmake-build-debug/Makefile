@@ -204,6 +204,33 @@ Layer/Layer.cpp.s:
 	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.s
 .PHONY : Layer/Layer.cpp.s
 
+Tests/tests.o: Tests/tests.cpp.o
+
+.PHONY : Tests/tests.o
+
+# target to build an object file
+Tests/tests.cpp.o:
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o
+.PHONY : Tests/tests.cpp.o
+
+Tests/tests.i: Tests/tests.cpp.i
+
+.PHONY : Tests/tests.i
+
+# target to preprocess a source file
+Tests/tests.cpp.i:
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.i
+.PHONY : Tests/tests.cpp.i
+
+Tests/tests.s: Tests/tests.cpp.s
+
+.PHONY : Tests/tests.s
+
+# target to generate assembly for a file
+Tests/tests.cpp.s:
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.s
+.PHONY : Tests/tests.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -249,6 +276,9 @@ help:
 	@echo "... Layer/Layer.o"
 	@echo "... Layer/Layer.i"
 	@echo "... Layer/Layer.s"
+	@echo "... Tests/tests.o"
+	@echo "... Tests/tests.i"
+	@echo "... Tests/tests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -60,15 +60,15 @@ include CMakeFiles/Neural_net_attempt_two_.dir/flags.make
 CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o: CMakeFiles/Neural_net_attempt_two_.dir/flags.make
 CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp"
 
 CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.i
 
 CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /main.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.s
 
 CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o.provides.build: CMakeFiles/Neu
 CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o: CMakeFiles/Neural_net_attempt_two_.dir/flags.make
 CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o: ../Layer/Layer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp"
 
 CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.i
 
 CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.s
 
 CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o.provides.build: CMakeFi
 CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o: CMakeFiles/Neural_net_attempt_two_.dir/flags.make
 CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o: ../Input_Layer/Input_layer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp"
 
 CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.i
 
 CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.s
 
 CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o.provides.bu
 CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o: CMakeFiles/Neural_net_attempt_two_.dir/flags.make
 CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o: ../Dense_Layer/Dense_Layer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp"
 
 CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.i
 
 CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.s
 
 CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o.requires:
 
@@ -153,12 +153,37 @@ CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o.provides: C
 CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o.provides.build: CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o
 
 
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o: CMakeFiles/Neural_net_attempt_two_.dir/flags.make
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o: ../Tests/tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o -c "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Tests/tests.cpp"
+
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Tests/tests.cpp" > CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.i
+
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Tests/tests.cpp" -o CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.s
+
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.requires:
+
+.PHONY : CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.requires
+
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.provides: CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.provides.build
+.PHONY : CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.provides
+
+CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.provides.build: CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o
+
+
 # Object files for target Neural_net_attempt_two_
 Neural_net_attempt_two__OBJECTS = \
 "CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o" \
 "CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o" \
 "CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o" \
-"CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o"
+"CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o" \
+"CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o"
 
 # External object files for target Neural_net_attempt_two_
 Neural_net_attempt_two__EXTERNAL_OBJECTS =
@@ -167,9 +192,12 @@ Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/main.cpp.o
 Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o
 Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o
 Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o
+Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o
 Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/build.make
+Neural_net_attempt_two_: /usr/local/Cellar/gsl/2.4/lib/libgsl.dylib
+Neural_net_attempt_two_: /usr/local/Cellar/gsl/2.4/lib/libgslcblas.dylib
 Neural_net_attempt_two_: CMakeFiles/Neural_net_attempt_two_.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Neural_net_attempt_two_"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Neural_net_attempt_two_"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Neural_net_attempt_two_.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,6 +209,7 @@ CMakeFiles/Neural_net_attempt_two_.dir/requires: CMakeFiles/Neural_net_attempt_t
 CMakeFiles/Neural_net_attempt_two_.dir/requires: CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o.requires
 CMakeFiles/Neural_net_attempt_two_.dir/requires: CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o.requires
 CMakeFiles/Neural_net_attempt_two_.dir/requires: CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o.requires
+CMakeFiles/Neural_net_attempt_two_.dir/requires: CMakeFiles/Neural_net_attempt_two_.dir/Tests/tests.cpp.o.requires
 
 .PHONY : CMakeFiles/Neural_net_attempt_two_.dir/requires
 
