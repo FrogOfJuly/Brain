@@ -16,14 +16,19 @@ namespace Brain {
         Eigen::MatrixXd W;
         Eigen::VectorXd b;
         void init();
+        Eigen::VectorXd activation (Eigen::VectorXd input);
+        Eigen::VectorXd transform(Eigen::VectorXd);
     public:
         int get_unit_number();
-        Eigen::VectorXd transform(Eigen::VectorXd);
         Dense_Layer(Brain::Layer *net, int unit_number);
-        Eigen::VectorXd activation (Eigen::VectorXd input);
+        Eigen::MatrixXd get_Params();
+        void set_Params(Eigen::MatrixXd);
         friend void test_Dense_layer();
+        friend void test_params_setter_and_getter();
     };
     void test_Dense_layer();
+
+    void test_params_setter_and_getter();
 
     double sigmoid(double x);
 

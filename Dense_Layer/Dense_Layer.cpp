@@ -6,6 +6,10 @@
 #include "../Input_Layer/Input_layer.h"
 #include <iostream>
 
+using std::cout;
+using std::endl;
+using std::cerr;
+
 template<double (*activation_function)(double), double (*derivative)(double)>
 Brain::Dense_Layer<activation_function, derivative>::Dense_Layer(Layer *net, int unit_number):Layer(net) {
     this->act_func = activation_function;
@@ -19,8 +23,8 @@ Eigen::VectorXd Brain::Dense_Layer<activation_function, derivative>::transform(E
     Eigen::VectorXd watch = input;
     Eigen::MatrixXd W = (this->W);
     Eigen::VectorXd b = (this->b);
-    Eigen::VectorXd tmp_vector = W*watch;
-    tmp_vector+=b;
+    Eigen::VectorXd tmp_vector = W * watch;
+    tmp_vector += b;
     Eigen::VectorXd tmp = activation(tmp_vector);
     return tmp;
 }
@@ -44,17 +48,86 @@ int Brain::Dense_Layer<activation_function, derivative>::get_unit_number() {
     return this->unit_number;
 }
 
-double Brain::dsigmoid(double x){
-    return sigmoid(x)*(sigmoid(x) - 1.0);
-};
-
-double Brain::sigmoid(double x){
-    return 1.0/(1.0 + exp(-x));
+template<double (*activation_function)(double), double (*derivative)(double)>
+Eigen::MatrixXd Brain::Dense_Layer<activation_function, derivative>::get_Params() {
+    Eigen::MatrixXd Params(this->W.rows(), this->W.cols() + 1);
+    Params << this->W, this->b;
+    return Params;
 }
 
+template<double (*activation_function)(double), double (*derivative)(double)>
+void Brain::Dense_Layer<activation_function, derivative>::set_Params(Eigen::MatrixXd Params) {
+    if (Params.rows() != this->unit_number || Params.cols() != this->prev->get_unit_number() + 1)
+        cerr << "wrong shape should be (" << this->unit_number << "," << this->prev->get_unit_number() + 1 << ")"
+             << "instead of (" << Params.rows() << "," << Params.cols() << ")" << endl;
+    for(int i = 0; i < this->unit_number*this->prev->get_unit_number(); i++)
+        this->W(i) = Params(i);
+    for(int i = this->unit_number*this->prev->get_unit_number(); i< this->unit_number*(this->prev->get_unit_number() + 1); i++) {
+        this->b(i - this->unit_number*this->prev->get_unit_number()) = Params(i);
+    }
+}
 
-using std::cout;
-using std::endl;
+double Brain::identity(double x) {
+    return x;
+}
+
+double Brain::didentity(double x) {
+    return 1.0;
+}
+
+double Brain::binary_step(double x) {
+    if (x > 0)
+        return 1;
+    else
+        return 0;
+}
+
+double Brain::dbinary_step(double x) {
+    return 0;
+}
+
+double Brain::tanH(double x) {
+    return 2.0 / (1 + exp(-2 * x)) - 1.0;
+}
+
+double Brain::dtanH(double x) {
+    return 1 - tanH(x) * tanH(x);
+}
+
+double Brain::RelU(double x) {
+    if (x < 0)
+        return 0;
+    else
+        return x;
+}
+
+double Brain::dRelu(double x) {
+    if (x < 0)
+        return 0;
+    else
+        return 1;
+}
+
+double Brain::dsigmoid(double x) {
+    return sigmoid(x) * (sigmoid(x) - 1.0);
+};
+
+double Brain::sigmoid(double x) {
+    return 1.0 / (1.0 + exp(-x));
+}
+
+void Brain::test_params_setter_and_getter() {
+    Input_layer net(10);
+    SigmoidLayer test_layer(&net, 20);
+    auto Params = test_layer.get_Params();
+    auto W = test_layer.W;
+    auto b = test_layer.b;
+    test_layer.set_Params(Params);
+    if(test_layer.W == W && test_layer.b == b)
+        cout<<"params setting and params getting test is passed"<<endl;
+    else
+        cout<<"params setting and params getting test is failed"<<endl;
+}
 
 void Brain::test_Dense_layer() {
     Brain::Input_layer net(3);
@@ -64,49 +137,8 @@ void Brain::test_Dense_layer() {
     Brain::TanHLayer hid_layer4(&net, 9);
     Brain::RelULayer hid_layer5(&net, 10);
     Eigen::VectorXd input(3);
-    for(int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
         input[i] = i;
     auto tmp = net.calculate(input);
-    cout<<"Dense layer test passed"<<endl;
-}
-
-double ::Brain::identity(double x) {
-    return x;
-}
-
-double ::Brain::didentity(double x) {
-    return 1.0;
-}
-
-double ::Brain::binary_step(double x) {
-    if (x > 0)
-        return 1;
-    else
-        return 0;
-}
-
-double ::Brain::dbinary_step(double x) {
-    return 0;
-}
-
-double ::Brain::tanH(double x) {
-    return 2.0/(1 + exp(-2*x)) - 1.0;
-}
-
-double Brain::dtanH(double x) {
-    return 1 - tanH(x)*tanH(x);
-}
-
-double ::Brain::RelU(double x) {
-    if(x < 0)
-        return 0;
-    else
-        return x;
-}
-
-double ::Brain::dRelu(double x) {
-    if(x < 0)
-        return 0;
-    else
-        return 1;
+    cout << "Dense layer test passed" << endl;
 }

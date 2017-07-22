@@ -4,20 +4,21 @@
 #include "./Dense_Layer/Dense_Layer.h"
 #include "./Tests/tests.h"
 
-int main() {
-    /*Eigen::MatrixXd Test_Matrix(5, 3);
-    Eigen::VectorXd Test_Vector(3);
-    std::cout << Test_Matrix << std::endl;
-    std::cout << "---------------------" << std::endl;
+using std::cout;
+using std::endl;
 
-    std::cout << Test_Vector << std::endl;
-    std::cout << "---------------------" << std::endl;
-    std::cout << Test_Matrix * Test_Vector << std::endl;
-     */
+int main() {
+
+
+//    Eigen::MatrixXd Test_Matrix = Eigen::MatrixXd::Random(3,4);
+//    cout<<Test_Matrix<<endl;
+//    cout<<Test_Matrix(12 - 1)<<endl;
+
     Brain::attaching_test();
     Brain::passing_test();
     Brain::test_Input_layer();
     Brain::test_Dense_layer();
     Brain::gsl_test();
+    Brain::test_params_setter_and_getter();
     return 0;
 }
