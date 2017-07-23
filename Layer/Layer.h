@@ -11,19 +11,34 @@ namespace Brain {
     class Layer {
     protected:
         Layer *next, *prev;
+
         void attach(Layer *net);
+
         virtual Eigen::VectorXd transform(Eigen::VectorXd input);
+
     public:
         Layer(Layer *net);
+
         Layer();
+
         Eigen::VectorXd calculate(Eigen::VectorXd);
+
+        int get_length();
+
         virtual int get_unit_number();
+
+        virtual Eigen::VectorXd get_all_params();
+
         friend void attaching_test();
+
         friend void passing_test();
     };
 
     void attaching_test();
+
     void passing_test();
+
+    void length_test();
 }
 
 #endif //NEURAL_NET_ATTEMPT_TWO_LAYER_H

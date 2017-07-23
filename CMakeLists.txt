@@ -12,7 +12,10 @@ set(SOURCE_FILES main.cpp
         Input_Layer/Input_layer.cpp
         Input_Layer/Input_layer.h
         Dense_Layer/Dense_Layer.cpp
-        Dense_Layer/Dense_Layer.h Tests/tests.cpp Tests/tests.h)
+        Dense_Layer/Dense_Layer.h
+        Tests/tests.cpp
+        Tests/tests.h
+        Brain/Brain.cpp Brain/Brain.h)
 add_executable(Neural_net_attempt_two_ ${SOURCE_FILES})
 
 find_package(GSL REQUIRED)

@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/Brain.cpp">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
+		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/Brain.h">
+			<Option target="Neural_net_attempt_two_"/>
+		</Unit>
 		<Unit filename="/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp">
 			<Option target="Neural_net_attempt_two_"/>
 		</Unit>

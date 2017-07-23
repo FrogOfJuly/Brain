@@ -33,3 +33,12 @@ void Brain::test_Input_layer() {
 int Brain::Input_layer::get_unit_number() {
     return this->unit_number;
 }
+
+Eigen::VectorXd Brain::Input_layer::get_all_params() {
+    if(this->next == nullptr) {
+        cerr << "this net only contains inputlayer" << endl;
+        throw;
+    }
+    else
+        return this->next->get_all_params();
+}

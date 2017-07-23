@@ -123,6 +123,33 @@ Neural_net_attempt_two_/fast:
 	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/build
 .PHONY : Neural_net_attempt_two_/fast
 
+Brain/Brain.o: Brain/Brain.cpp.o
+
+.PHONY : Brain/Brain.o
+
+# target to build an object file
+Brain/Brain.cpp.o:
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Brain/Brain.cpp.o
+.PHONY : Brain/Brain.cpp.o
+
+Brain/Brain.i: Brain/Brain.cpp.i
+
+.PHONY : Brain/Brain.i
+
+# target to preprocess a source file
+Brain/Brain.cpp.i:
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Brain/Brain.cpp.i
+.PHONY : Brain/Brain.cpp.i
+
+Brain/Brain.s: Brain/Brain.cpp.s
+
+.PHONY : Brain/Brain.s
+
+# target to generate assembly for a file
+Brain/Brain.cpp.s:
+	$(MAKE) -f CMakeFiles/Neural_net_attempt_two_.dir/build.make CMakeFiles/Neural_net_attempt_two_.dir/Brain/Brain.cpp.s
+.PHONY : Brain/Brain.cpp.s
+
 Dense_Layer/Dense_Layer.o: Dense_Layer/Dense_Layer.cpp.o
 
 .PHONY : Dense_Layer/Dense_Layer.o
@@ -267,6 +294,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Neural_net_attempt_two_"
+	@echo "... Brain/Brain.o"
+	@echo "... Brain/Brain.i"
+	@echo "... Brain/Brain.s"
 	@echo "... Dense_Layer/Dense_Layer.o"
 	@echo "... Dense_Layer/Dense_Layer.i"
 	@echo "... Dense_Layer/Dense_Layer.s"

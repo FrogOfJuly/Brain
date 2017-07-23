@@ -4,7 +4,6 @@
 #include "iostream"
 #include "gsl/gsl_randist.h"
 #include "tests.h"
-#include <gsl/gsl_rng.h>
 
 void Brain::gsl_test() {
     gsl_rng_env_setup();
@@ -17,5 +16,6 @@ void Brain::gsl_test() {
     for (int i = 0; i < 10; i++) {
         check += x[i] * x[i];
     }
+    gsl_rng_free (r);
     std::cout<<"gsl is probably working"<<std::endl;
 }

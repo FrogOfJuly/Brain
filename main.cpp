@@ -9,13 +9,13 @@ using std::endl;
 
 int main() {
 
-
 //    Eigen::MatrixXd Test_Matrix = Eigen::MatrixXd::Random(3,4);
 //    cout<<Test_Matrix<<endl;
 //    cout<<Test_Matrix(12 - 1)<<endl;
 
     Brain::attaching_test();
     Brain::passing_test();
+    Brain::length_test();
     Brain::test_Input_layer();
     Brain::test_Dense_layer();
     Brain::gsl_test();

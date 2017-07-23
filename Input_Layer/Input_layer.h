@@ -14,6 +14,7 @@ namespace Brain {
     public:
         int get_unit_number();
         Input_layer(int unit_number);
+        Eigen::VectorXd get_all_params();
         friend void test_Input_layer();
     };
 

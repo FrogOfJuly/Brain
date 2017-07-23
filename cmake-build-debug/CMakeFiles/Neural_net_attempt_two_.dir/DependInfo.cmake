@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/Brain.cpp" "/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/Neural_net_attempt_two_.dir/Brain/Brain.cpp.o"
   "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.cpp" "/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/Neural_net_attempt_two_.dir/Dense_Layer/Dense_Layer.cpp.o"
   "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.cpp" "/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/Neural_net_attempt_two_.dir/Input_Layer/Input_layer.cpp.o"
   "/Users/Kirill/ClionProjects/Neural_net_attempt_two /Layer/Layer.cpp" "/Users/Kirill/ClionProjects/Neural_net_attempt_two /cmake-build-debug/CMakeFiles/Neural_net_attempt_two_.dir/Layer/Layer.cpp.o"

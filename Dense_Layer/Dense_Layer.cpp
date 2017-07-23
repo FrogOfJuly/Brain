@@ -49,21 +49,25 @@ int Brain::Dense_Layer<activation_function, derivative>::get_unit_number() {
 }
 
 template<double (*activation_function)(double), double (*derivative)(double)>
-Eigen::MatrixXd Brain::Dense_Layer<activation_function, derivative>::get_Params() {
-    Eigen::MatrixXd Params(this->W.rows(), this->W.cols() + 1);
-    Params << this->W, this->b;
+Eigen::VectorXd Brain::Dense_Layer<activation_function, derivative>::get_Params() {
+    Eigen::VectorXd Params(this->W.rows() * (this->W.cols() + 1));
+    for (long int i = 0; i < this->W.rows() * this->W.cols(); i++)
+        Params(i) = (this->W)(i);
+    for (long int i = this->W.rows() * this->W.cols(); i < this->W.rows() * (this->W.cols() + 1); i++)
+        Params(i) = (this->b)(i - this->W.rows() * this->W.cols());
     return Params;
 }
 
 template<double (*activation_function)(double), double (*derivative)(double)>
 void Brain::Dense_Layer<activation_function, derivative>::set_Params(Eigen::MatrixXd Params) {
-    if (Params.rows() != this->unit_number || Params.cols() != this->prev->get_unit_number() + 1)
-        cerr << "wrong shape should be (" << this->unit_number << "," << this->prev->get_unit_number() + 1 << ")"
-             << "instead of (" << Params.rows() << "," << Params.cols() << ")" << endl;
-    for(int i = 0; i < this->unit_number*this->prev->get_unit_number(); i++)
+    if (Params.rows() != (this->prev->get_unit_number() + 1) * this->unit_number)
+        cerr << "wrong shape should be " << (this->prev->get_unit_number() + 1) * this->unit_number <<
+             " instead of " << Params.rows() << endl;
+    for (int i = 0; i < this->unit_number * this->prev->get_unit_number(); i++)
         this->W(i) = Params(i);
-    for(int i = this->unit_number*this->prev->get_unit_number(); i< this->unit_number*(this->prev->get_unit_number() + 1); i++) {
-        this->b(i - this->unit_number*this->prev->get_unit_number()) = Params(i);
+    for (int i = this->unit_number * this->prev->get_unit_number();
+         i < this->unit_number * (this->prev->get_unit_number() + 1); i++) {
+        this->b(i - this->unit_number * this->prev->get_unit_number()) = Params(i);
     }
 }
 
@@ -123,10 +127,10 @@ void Brain::test_params_setter_and_getter() {
     auto W = test_layer.W;
     auto b = test_layer.b;
     test_layer.set_Params(Params);
-    if(test_layer.W == W && test_layer.b == b)
-        cout<<"params setting and params getting test is passed"<<endl;
+    if (test_layer.W == W && test_layer.b == b)
+        cout << "params setting and params getting test is passed" << endl;
     else
-        cout<<"params setting and params getting test is failed"<<endl;
+        cout << "params setting and params getting test is failed" << endl;
 }
 
 void Brain::test_Dense_layer() {
@@ -141,4 +145,17 @@ void Brain::test_Dense_layer() {
         input[i] = i;
     auto tmp = net.calculate(input);
     cout << "Dense layer test passed" << endl;
+}
+
+template<double(*activation_function)(double), double(*dirivative)(double)>
+Eigen::VectorXd Brain::Dense_Layer<activation_function, dirivative>::get_all_params() {
+    if(this->next == nullptr)
+        return this->get_Params();
+    else{
+        Eigen::VectorXd next_params = this->next->get_all_params();
+        Eigen::VectorXd params = this->get_Params();
+        Eigen::VectorXd all_params (params.rows() + next_params.rows());
+        all_params << params, next_params;
+        return all_params;
+    }
 }

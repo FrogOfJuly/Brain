@@ -6,26 +6,42 @@
 #define NEURAL_NET_ATTEMPT_TWO_DENSE_LAYER_H
 
 #include "../Layer/Layer.h"
+
 namespace Brain {
     template<double (*activation_function)(double), double (*derivative)(double)>
     class Dense_Layer : public Layer {
     private:
         int unit_number;
+
         double (*act_func)(double);
+
         double (*grad)(double);
+
         Eigen::MatrixXd W;
         Eigen::VectorXd b;
+
         void init();
-        Eigen::VectorXd activation (Eigen::VectorXd input);
+
+        Eigen::VectorXd activation(Eigen::VectorXd input);
+
         Eigen::VectorXd transform(Eigen::VectorXd);
+
     public:
         int get_unit_number();
+
         Dense_Layer(Brain::Layer *net, int unit_number);
-        Eigen::MatrixXd get_Params();
+
+        Eigen::VectorXd get_Params();
+
+        Eigen::VectorXd get_all_params();
+
         void set_Params(Eigen::MatrixXd);
+
         friend void test_Dense_layer();
+
         friend void test_params_setter_and_getter();
     };
+
     void test_Dense_layer();
 
     void test_params_setter_and_getter();
