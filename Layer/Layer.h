@@ -29,6 +29,8 @@ namespace Brain {
 
         virtual Eigen::VectorXd get_all_params();
 
+        virtual void set_all_params(Eigen::VectorXd);
+
         friend void attaching_test();
 
         friend void passing_test();

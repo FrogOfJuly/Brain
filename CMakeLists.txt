@@ -15,7 +15,9 @@ set(SOURCE_FILES main.cpp
         Dense_Layer/Dense_Layer.h
         Tests/tests.cpp
         Tests/tests.h
-        Brain/Brain.cpp Brain/Brain.h)
+        Brain/Brain.cpp
+        Brain/Brain.h)
+
 add_executable(Neural_net_attempt_two_ ${SOURCE_FILES})
 
 find_package(GSL REQUIRED)

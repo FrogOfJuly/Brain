@@ -149,13 +149,29 @@ void Brain::test_Dense_layer() {
 
 template<double(*activation_function)(double), double(*dirivative)(double)>
 Eigen::VectorXd Brain::Dense_Layer<activation_function, dirivative>::get_all_params() {
-    if(this->next == nullptr)
+    if (this->next == nullptr)
         return this->get_Params();
-    else{
+    else {
         Eigen::VectorXd next_params = this->next->get_all_params();
         Eigen::VectorXd params = this->get_Params();
-        Eigen::VectorXd all_params (params.rows() + next_params.rows());
+        Eigen::VectorXd all_params(params.rows() + next_params.rows());
         all_params << params, next_params;
         return all_params;
     }
+}
+
+template<double(*activation_function)(double), double(*dirivative)(double)>
+void Brain::Dense_Layer<activation_function, dirivative>::set_all_params(Eigen::VectorXd params) {
+    auto default_params = this->get_Params();
+    long int used_params_number = default_params.rows() * default_params.cols();
+    Eigen::VectorXd used_params(used_params_number);
+    long int input_params_number = params.rows() * params.cols();
+    Eigen::VectorXd unused_params(input_params_number - used_params_number);
+    for (long int i = 0; i < used_params_number; i++)
+        used_params(i) = params(i);
+    for (long int i = used_params_number; i < input_params_number; i++)
+        unused_params(i - used_params_number) = params(i);
+    this->set_Params(used_params);
+    if(this->next != nullptr)
+        this->next->set_all_params(unused_params);
 }

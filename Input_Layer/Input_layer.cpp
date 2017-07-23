@@ -42,3 +42,12 @@ Eigen::VectorXd Brain::Input_layer::get_all_params() {
     else
         return this->next->get_all_params();
 }
+
+void Brain::Input_layer::set_all_params(Eigen::VectorXd Params) {
+    if(this->next == nullptr) {
+        cerr << "there is something definitely gone wrong here" << endl;
+        throw;
+    }
+    else
+        this->next->set_all_params(Params);
+}

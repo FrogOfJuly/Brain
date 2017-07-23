@@ -20,5 +20,6 @@ int main() {
     Brain::test_Dense_layer();
     Brain::gsl_test();
     Brain::test_params_setter_and_getter();
+    Brain::Brain_test();
     return 0;
 }

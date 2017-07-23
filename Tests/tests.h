@@ -6,6 +6,7 @@
 #define NEURAL_NET_ATTEMPT_TWO_TESTS_H
 namespace Brain {
     void gsl_test();
+    void Brain_test();
 }
 
 #endif //NEURAL_NET_ATTEMPT_TWO_TESTS_H

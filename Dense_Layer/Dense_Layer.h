@@ -29,13 +29,15 @@ namespace Brain {
     public:
         int get_unit_number();
 
-        Dense_Layer(Brain::Layer *net, int unit_number);
+        Dense_Layer(Layer *net, int unit_number);
 
         Eigen::VectorXd get_Params();
 
         Eigen::VectorXd get_all_params();
 
         void set_Params(Eigen::MatrixXd);
+
+        void set_all_params(Eigen::VectorXd);
 
         friend void test_Dense_layer();
 

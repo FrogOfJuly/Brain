@@ -25,6 +25,8 @@ Brain.h
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/Brain.h
 gsl/gsl_randist.h
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/gsl/gsl_randist.h
+iostream
+-
 
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/Brain.h
 ../Input_Layer/Input_layer.h
@@ -49,8 +51,6 @@ Input_layer.h
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.h
 iostream
 -
-exception
--
 
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.h
 ../Layer/Layer.h
@@ -73,8 +73,12 @@ gsl/gsl_randist.h
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Tests/gsl/gsl_randist.h
 tests.h
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Tests/tests.h
-gsl/gsl_rng.h
--
+../Brain/Brain.h
+/Users/Kirill/ClionProjects/Neural_net_attempt_two /Brain/Brain.h
+../Input_Layer/Input_layer.h
+/Users/Kirill/ClionProjects/Neural_net_attempt_two /Input_Layer/Input_layer.h
+../Dense_Layer/Dense_Layer.h
+/Users/Kirill/ClionProjects/Neural_net_attempt_two /Dense_Layer/Dense_Layer.h
 
 /Users/Kirill/ClionProjects/Neural_net_attempt_two /Tests/tests.h
 

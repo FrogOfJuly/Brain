@@ -96,3 +96,7 @@ Eigen::VectorXd Brain::Layer::get_all_params() {
     ;
 }
 
+void Brain::Layer::set_all_params(Eigen::VectorXd params){
+    ;
+}
+
