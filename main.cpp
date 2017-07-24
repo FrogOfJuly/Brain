@@ -21,5 +21,6 @@ int main() {
     Brain::gsl_test();
     Brain::test_params_setter_and_getter();
     Brain::Brain_test();
+    Brain::Brain_process_test();
     return 0;
 }

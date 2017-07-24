@@ -33,3 +33,19 @@ void Brain::Brain_test(){
     brain.set_all_params(params);
     std::cout<<"test for getting and setting all params passed"<<std::endl;
 }
+
+void ::Brain::Brain_process_test() {
+    Input_layer net(10);
+    SigmoidLayer hidden_layer1(&net, 11);
+    SigmoidLayer hidden_layer2(&net, 13);
+    SigmoidLayer hidden_layer3(&net, 17);
+    Brain brain(&net);
+    for(int i = 0; i < 10; i++) {
+        Eigen::VectorXd obs = Eigen::MatrixXd::Random(10,1);
+        brain.apply_param_increment();
+        int action = brain.process(obs);
+        double reward = rand()%5;
+        brain.update_params(reward);
+    }
+    std::cout<<"process and update methods are working"<<std::endl;
+}
